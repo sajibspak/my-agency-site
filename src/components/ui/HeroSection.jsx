@@ -1,32 +1,35 @@
 import React from 'react';
 import manVideo from '../../assets/image/heroimg.webm'; // আপনার ছবির সঠিক পাথ দিন
 import heroBg from '../../assets/image/linebg.png';
+import { NavLink } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
     <div style={{ backgroundImage: `url(${heroBg})` }}
-      className="bg-[#0A0A0A] bg-cover bg-center bg-no-repeat text-white font-serif"> {/* পুরো পেজের ব্যাকগ্রাউন্ড কালো এবং ফন্ট সেরিফ */}
-      <div className="container mx-auto px-4 py-4 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between">
+      className="bg-[#0A0A0A] bg-cover bg-center bg-no-repeat text-white "> {/* পুরো পেজের ব্যাকগ্রাউন্ড কালো এবং ফন্ট সেরিফ */}
+      <div className="container max-w-7xl max-md:px-6 mx-auto py-4 md:py-24 flex flex-col-reverse md:flex-row items-center justify-between">
 
         {/* বাম পাশের কন্টেন্ট (টেক্সট এবং বাটন) */}
         <div className="md:w-1/2 mt-10 md:mt-0 pr-0 md:pr-10">
 
           {/* প্রধান শিরোনাম */}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 tracking-wide">
+          <h1 className="text-7xl animate-text font-serif max-md:text-5xl font-medium capitalize leading-tight mb-6 tracking-wide">
             Build fast. <br /> Earn more. <br /> Grow together.
           </h1>
 
           {/* সাবটাইটেল / প্যারাগ্রাফ */}
-          <p className="text-lg text-gray-300 mb-10">
+          <p className="text-lg animate-text text-gray-300 mb-10">
             End-to-end brand identity, Shopify design, and web solutions for D2C founders—strategically built and launch-ready in 8–12 weeks.
           </p>
 
           {/* বাটন এবং লিংক এরিয়া */}
           <div className="flex items-center gap-5">
-            {/* লাল বাটন */}
+            
+            <NavLink to="/contact">
             <button className="bg-[#02B8DF] hover:bg-[#35C6E5] hover:shadow-[0_0_20px_#59E2FF] text-white font-semibold py-4 px-8 rounded transition duration-300">
               Start Now
             </button>
+            </NavLink>
 
             {/* টেক্সট লিংক এবং অ্যারো আইকন */}
             <a href="#" className="flex items-center gap-4 text-white hover:text-gray-300 transition duration-300  group">

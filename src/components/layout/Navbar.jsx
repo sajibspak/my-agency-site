@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Link যুক্ত করা হয়েছে
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import MainCta from "../button/MainCta";
@@ -14,26 +15,29 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#0A0A0A] border-b border-gray-800 sticky top-0 z-50">
-      <div className="max-w-100vw px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between px-10 items-center h-24"> {/* h-24 দিয়েছি কারণ আপনার লোগো বড় */}
+      <div className="max-w-7xl mx-auto">
+        <div className="flex justify-between max-md:px-6 items-center h-24"> {/* h-24 দিয়েছি কারণ আপনার লোগো বড় */}
           
           {/* ১. লোগো */}
-          <div className="flex-shrink-0 flex items-center">
+          <Link to="/" className="flex-shrink-0 flex items-center cursor-pointer">
             <img src={myLogo} alt="Logo" className="w-32 object-contain" />
-          </div>
+          </Link>
 
           {/* ২. ডেস্কটপ মেনু (মোবাইলে হাইড থাকবে) */}
           <div className="hidden md:flex items-center gap-8">
             <NavLink to="/" className={linkClasses}>Home</NavLink>
-            <NavLink to="/about" className={linkClasses}>About</NavLink>
             <NavLink to="/services" className={linkClasses}>Services</NavLink>
             <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
+            <NavLink to="/about" className={linkClasses}>About</NavLink>
+            <NavLink to="/blog" className={linkClasses}>Blog</NavLink>
           </div>
 
           {/* ৩. বাটন (ডেস্কটপ) */}
+           <NavLink to="/contact">
           <div className="hidden md:block">
             <MainCta />
           </div>
+          </NavLink>
 
           {/* ৪. মোবাইল হ্যামবার্গার আইকন (ডেস্কটপে হাইড থাকবে) */}
           <div className="md:hidden flex items-center gap-4">
@@ -42,7 +46,7 @@ export default function Navbar() {
             
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-[#02B8DF] focus:outline-none p-2"
+              className="text-white hover:text-[#02B8DF] focus:outline-none"
             >
               {isOpen ? (
                 // ক্রস (X) আইকন
@@ -62,7 +66,7 @@ export default function Navbar() {
 
       {/* ৫. মোবাইল ড্রপডাউন মেনু (কালো ব্যাকগ্রাউন্ড) */}
       {isOpen && (
-        <div className="md:hidden bg-black border-t border-gray-800 absolute w-full left-0">
+        <div className="md:hidden bg-black border-t border-gray-800 absolute w-full h-screen left-0">
           <div className="px-4 pt-4 pb-6 space-y-4 flex flex-col items-center shadow-xl">
             <NavLink 
                 to="/" 
@@ -92,11 +96,20 @@ export default function Navbar() {
             >
                 Contact
             </NavLink>
+            <NavLink 
+                to="/blog" 
+                className={linkClasses} 
+                onClick={() => setIsOpen(false)}
+            >
+                Blog
+            </NavLink>
             
             {/* মোবাইলের ভেতরেও বাটনটি দিয়েছি */}
+             <NavLink to="/contact">
             <div className="mt-4">
                 <MainCta /> 
             </div>
+            </NavLink>
           </div>
         </div>
       )}

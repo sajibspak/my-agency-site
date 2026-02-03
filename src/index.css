@@ -1,1 +1,14 @@
+/* ১. সবার উপরে ফন্ট ইমপোর্ট (Roboto এবং Playfair Display) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ২. এরপর টেইলউইন্ড ইমপোর্ট */
 @import "tailwindcss";
+
+/* ৩. থিম কনফিগারেশন */
+@theme {
+  /* সাধারণ লেখার জন্য এখন Roboto পাবে */
+  --font-sans: "Roboto", sans-serif;
+  
+  /* হেডলাইনের জন্য Playfair Display ঠিক থাকবে */
+  --font-serif: "Playfair Display", serif;
+}

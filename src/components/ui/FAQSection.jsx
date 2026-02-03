@@ -38,15 +38,15 @@ const FAQSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16">
         
         {/* ১. বাম পাশের কন্টেন্ট */}
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/2">
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-cyan-500 text-2xl">✨</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold leading-tight">
+            
+            <h2 className="text-6xl md:text-6xl animate-text font-serif font-normal leading-tight">
               Frequently Asked <br /> Questions
             </h2>
           </div>
           
-          <p className="text-gray-400 mb-8 leading-relaxed">
+          <p className="text-gray-400 animate-text mb-8 leading-relaxed">
             Get answers to common questions about SEO and digital marketing. Our FAQ section provides insights and guidance to help you navigate the complexities of search engine optimization and make informed decisions.
           </p>
 
@@ -56,7 +56,7 @@ const FAQSection = () => {
         </div>
 
         {/* ২. ডান পাশের অ্যাকর্ডিয়ন (Accordion) লিস্ট */}
-        <div className="lg:w-2/3">
+        <div className="lg:w-1/2">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div 

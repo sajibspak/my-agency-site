@@ -6,30 +6,28 @@ import React from 'react';
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#09171A] py-20 px-4 sm:px-6 lg:px-8 font-sans">
+    <section className="bg-[#09171A] py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
         {/* ১. সেকশন হেডার */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <p className="text-cyan-600 font-bold uppercase tracking-wider mb-2 text-sm">
+          <p className="text-cyan-600 animate-text font-bold uppercase tracking-wider mb-2 text-sm">
             Why Choose Us
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl animate-text md:text-6xl font-serif font-medium capitalize text-white mb-4">
             We combine creative vision with technical expertise
           </h2>
-          <p className="text-[#99a1af] text-lg">
-            We bring a blend of creative vision and technical expertise to help your business grow. Here is why leading brands trust us.
-          </p>
+        
         </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
           {/* ২. বাম পাশের কন্টেন্ট */}
           <div className="lg:w-1/2">
-            <h3 className="text-3xl font-bold text-white mb-6">
+            <h3 className="text-3xl animate-text font-serif font-medium text-white mb-6">
               Industry-Leading Expertise
             </h3>
-            <p className="text-[#99a1af] mb-8 leading-relaxed">
+            <p className="text-[#99a1af] animate-text mb-8 leading-relaxed">
               We don't just execute tasks; we become your strategic partner. Our team has a proven track record of delivering high-impact solutions that drive measurable growth for our clients.
             </p>
 
@@ -42,8 +40,8 @@ const WhyChooseUs = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white text-lg">100+</h4>
-                  <p className="text-xs text-[#99a1af] uppercase">Happy Clients</p>
+                  <h4 className="font-bold animate-text text-white text-lg">100+</h4>
+                  <p className="text-xs animate-text text-[#99a1af] uppercase">Happy Clients</p>
                 </div>
               </div>
 
@@ -54,14 +52,14 @@ const WhyChooseUs = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white text-lg">50+</h4>
-                  <p className="text-xs text-[#99a1af] uppercase">Project</p>
+                  <h4 className="font-bold animate-text text-white text-lg">50+</h4>
+                  <p className="text-xs animate-text text-[#99a1af] uppercase">Project</p>
                 </div>
               </div>
             </div>
 
             {/* চেকলিস্ট (Checklist) */}
-            <div className="space-y-4 mb-10">
+            <div className="space-y-4 animate-text mb-10">
               {[
                 "Data-driven strategies that guarantee ROI.",
                 "Transparent reporting and real-time analytics.",

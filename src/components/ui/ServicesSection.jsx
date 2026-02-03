@@ -22,7 +22,7 @@ const services = [
         description: 'Crafting a unique voice and visual identity that makes your brand stand out, builds trust, and commands premium prices in the market.',
         icon: (
             // আইকন (Branding/Tag)
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-purple-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-cyan-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a22.53 22.53 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
             </svg>
@@ -34,7 +34,7 @@ const services = [
         description: 'We create intuitive and engaging user experiences that keep your audience coming back. Simple, beautiful, and effective design.',
         icon: (
             // আইকন (UI/UX)
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-pink-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-cyan-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.077-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
             </svg>
         ),
@@ -45,7 +45,7 @@ const services = [
         description: 'Launch your store in weeks, not months. We set up, customize, and optimize your Shopify store for maximum conversions and sales.',
         icon: (
             // আইকন (Shopify/Shopping Bag)
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-green-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-cyan-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
             </svg>
         ),
@@ -56,7 +56,7 @@ const services = [
         description: 'Climb the search rankings and attract qualified leads organically with data-driven SEO strategies and high-quality, engaging content.',
         icon: (
             // আইকন (SEO/Search)
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-cyan-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6" />
             </svg>
         ),
@@ -67,7 +67,7 @@ const services = [
         description: 'Bring your brand to life with captivating motion graphics and professional video editing that grabs attention and tells your story.',
         icon: (
             // আইকন (Video/Play)
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-red-500">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-cyan-500">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.328l5.603 3.113z" />
             </svg>
@@ -84,10 +84,10 @@ const ServicesSection = () => {
 
                 {/* সেকশন হেডার */}
                 <div className="text-center mb-16">
-                    <p className="text-cyan-500 font-semibold uppercase tracking-wider mb-3">
+                    <p className="text-cyan-500 animate-text font-semibold uppercase tracking-wider mb-3">
                         Our Services
                     </p>
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                    <h2 className="text-4xl font-serif animate-text sm:text-6xl font-medium text-white">
                         The Right Team Makes All the Difference
                     </h2>
                 </div>
@@ -116,10 +116,10 @@ const ServicesSection = () => {
 
                             {/* Learn More লিংক */}
                             <NavLink
-                                to="/services"
+                                to="/contact"
                                 className="inline-flex items-center text-cyan-600 font-semibold hover:text-cyan-700 transition duration-300"
                             >
-                                Learn More
+                                Get Started
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4 ml-2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                 </svg>

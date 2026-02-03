@@ -13,16 +13,16 @@ const StatsSection = () => {
         {/* হেডার সেকশন */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
           <div className="md:w-2/3">
-            <p className="text-[#59E2FF] font-semibold text-sm tracking-wider mb-3 uppercase">
+            <p className="text-[#59E2FF] animate-text font-semibold text-sm tracking-wider mb-3 uppercase">
               Proven Results
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold leading-tight">
-              $50M+ Revenue <br /> Generated for Clients
+            <h2 className="text-4xl animate-text font-serif md:text-6xl font-medium leading-tight">
+              $20M+ Revenue <br /> Generated for Clients
             </h2>
           </div>
           
           <div className="md:w-1/3 md:pt-10">
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 animate-text text-lg leading-relaxed">
               We don't just design pretty logos. We build strategic digital experiences that turn visitors into loyal customers and drive real ROI.
             </p>
           </div>
@@ -83,7 +83,7 @@ const Card = ({ title, desc, videoSrc, gradient }) => {
           />
         ) : (
           // ভিডিও না থাকলে টাইটেল দেখাবে (ফ্ল্যাশব্যাক)
-          <h4 className="text-2xl font-bold text-white opacity-20 select-none">{title}</h4>
+          <h4 className="text-2xl animate-text font-bold text-white opacity-20 select-none">{title}</h4>
         )}
 
         {/* ভিডিওর উপরে হালকা কালার ওভারলে (যাতে টেক্সট পড়া যায়, অপশনাল) */}
@@ -92,8 +92,8 @@ const Card = ({ title, desc, videoSrc, gradient }) => {
 
       {/* টেক্সট এরিয়া */}
       <div className="p-8 flex-grow">
-        <h3 className="text-2xl font-semibold mb-4 text-white">{title}</h3>
-        <p className="text-gray-400 leading-relaxed text-sm">
+        <h3 className="text-2xl animate-text font-semibold mb-4 text-white">{title}</h3>
+        <p className="text-gray-400 animate-text leading-relaxed text-sm">
           {desc}
         </p>
       </div>
